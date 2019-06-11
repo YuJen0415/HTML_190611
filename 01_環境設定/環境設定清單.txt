@@ -1,4 +1,4 @@
-A. vscode
+﻿A. vscode
 
 	vscode官網：https://code.visualstudio.com/
 
@@ -8,8 +8,6 @@ A. vscode
 		3. open in browser
 		4. Bookmarks
 		5. Bracket Pair Colorizer
-
-	
 	-----
 
 B. 快速鍵 (Windows)：https://code.visualstudio.com/docs/getstarted/keybindings
