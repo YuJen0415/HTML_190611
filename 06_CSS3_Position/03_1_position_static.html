@@ -19,16 +19,18 @@
 
         #reddiv {
             background-color: #FF0000;
-
+            top: 500px;
             /* 試試看，在這裡撰寫 top:500，元素位置是否有移動 */
         }
 
         #greendiv {
             background-color: #00FF00;
+            left: 350px;
         }
 
         #bluediv {
             background-color: #0000FF;
+            right: 200px;
         }
 
     </style>
@@ -42,9 +44,9 @@
     </h3>
 
     <div class="demo">
-        <div id="reddiv">Red</div>
-        <div id="greendiv">Green</div>
-        <div id="bluediv">Blue</div>
+        <div id="reddiv" style="position: fixed;">Red</div>
+        <div id="greendiv" style="position: fixed;">Green</div>
+        <div id="bluediv" style="position: fixed;">Blue</div>
     </div>
 
 </body>

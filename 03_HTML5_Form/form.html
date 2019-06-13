@@ -53,6 +53,52 @@
             <label for="thirty">31~99</label>
             歲
         </div>
+        <div>
+            <label for="city">居住地</label>
+            <select id="city" name="cityList">
+                <option value="Zhongshan">中山</option>
+                <option value="Tamsui">淡水</option>
+                <option value="Nangang">南港</option>
+            </select>
+        </div>
+
+        <div>
+            <label>使用那些軟體(多選)</label>
+            <input type="checkbox" id="word" name="software" value="word">
+            <label for="word">WORD</label>
+            <input type="checkbox" id="excel" name="software" value="excel">
+            <label for="excel">EXCEL</label>
+        </div>
+
+        <div class="slidecontainer">
+            <label>身高是</label>
+            <input type="range" min="100" max="250" value="170" class="slider" id="myRange">
+            <span id="demo"></span> 公分
+        </div>
+
+        <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+        </script>
+
+        <div>
+            <label for="weight">體重</label>
+            <input type="range" id="weight" min="40" max="120" step="1" oninput="outputUpdate(value)">
+            <output id="result">顯示數字</output>
+        </div>
+        <script>
+            function outputUpdate(vol) {
+                document.getElementById("result").value = vol;
+            }
+        </script>
+
+        <input type="submit">
+
     </form>
 
 </body>

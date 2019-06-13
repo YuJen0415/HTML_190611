@@ -7,14 +7,23 @@
         /* 透過<a>標籤，設定字型 & 取消底線 */
 
         /* (link) 設定超連結未連結時的顏色 */
-
+        a:link {
+            color: blueviolet;
+        }
         /* (visited) 設定超連結已連結過的顏色 */
-
+        a:visited {
+            color: red;
+        }
         /* (hover) 設定滑鼠移至連結上方時的顏色 */
-
+        a:hover {
+            color: chartreuse;
+        }
         /* (active) 設定超連結點選連結當下的顏色 */
-
+        a:active {
+            color: deeppink;
+        }
     </style>
+    <link rel="stylesheet" href="navStyle.css">
 </head>
 
 <body>
@@ -29,7 +38,7 @@
     <!-- 4. 引用 navStyle.css -->
     <!-- 5. 對照 navStyle.css 設定網頁元素 -->
 
-    <p><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">CSS Pseudo-classes</a></p>
+    <p><a class="navbar" href="https://www.w3schools.com/css/css_pseudo_classes.asp">CSS Pseudo-classes</a></p>
 
 </body>
 
